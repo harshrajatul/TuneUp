@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
@@ -19,7 +23,9 @@
         <div class="player">
             <nav>
                 <div class="circle">
-                    <i class="fa-solid fa-angle-left"></i>
+                    <a class="downtoStore" href="media/kotonoha no niwa.mpeg" download>
+                        <i class="fa-solid fa-download" style="color: #f53192;"></i>
+                    </a>
                 </div>
                 <div class="circle">
                     <i class="fa-solid fa-bars"></i> 
@@ -30,7 +36,12 @@
             <h1>Rain</h1>
             <p>Motohiro Hata</p>
 
-            <audio id="song">
+            <div class="time">
+                <div class="startTime" id="start_time">1:23</div>
+                <div class="endTime" id="end_time">2:34</div>
+            </div>
+
+            <audio onended="PlaytoPause()" id="song">
                 <source src="media/kotonoha no niwa.mpeg" type="audio/mpeg">
             </audio>
             <input type="range" value="0" id="progress">

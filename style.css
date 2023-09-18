@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Indie Flower', cursive;
+    
 }
 
 .container{
@@ -35,11 +35,27 @@ nav .circle{
     height: 40px;
     line-height: 40px;
     box-shadow: 2px 1px 1px black;
+    cursor: pointer;
 }
+
 
 .cover{
     border: 8px solid #f53192;
     border-radius: 50%;
+}
+
+h1,p{
+    font-family: 'Indie Flower', cursive;
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 3%;
+    margin-right: 3%;
+    top: 22px;
+    font-family: 'Commissioner', sans-serif;
 }
 
 #progress{
@@ -60,6 +76,12 @@ nav .circle{
     border-radius: 50%;
     border: 8px solid #f53192;
     box-shadow: 2px 1px 1px black;
+}
+
+#progress::-webkit-slider-thumb:hover{
+    background: #f53192;
+    border: 8px solid #fff;
+    
 }
 
 .controls{
@@ -88,3 +110,12 @@ nav .circle{
     color: #fff;
 }
 
+.controls div:hover{
+    color: #fff;
+    background: #f53192;
+}
+
+.controls div:nth-child(2):hover{
+    color: #f53192;
+    background: #fff;
+}
