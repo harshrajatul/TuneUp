@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>TuneUp</title>
+</head>
+<body>
+    <div class="container">
+        <div class="player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i> 
+                </div>
+            </nav>
+
+            <img src="album_cover.jpg" class="cover" height="300px" width="300px">
+            <h1>Rain</h1>
+            <p>Motohiro Hata</p>
+
+            <audio id="song">
+                <source src="media/kotonoha no niwa.mpeg" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward-step"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward-step"></i></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
